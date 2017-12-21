@@ -7,8 +7,9 @@ public class Dealer extends Person {
 			return true;
 		else if (total_value == 17 && hasAce()) {
 			return true;
-		} else {
-			if (total_value >= 21)
+		} 
+		else {
+			if (total_value > 17)
 				return false;
 			else {
 				Player[] players = tbl.get_player();
